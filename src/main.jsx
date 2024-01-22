@@ -5,14 +5,15 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Layout from './components/Layout/Layout';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
-  },
+    element: <Layout></Layout>
+  }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
