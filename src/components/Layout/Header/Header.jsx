@@ -1,5 +1,7 @@
 import React from "react";
 import banner from "../../../assets/images/banner.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
 const Header = () => {
   return (
     <div className="container mx-auto">
@@ -16,15 +18,14 @@ const Header = () => {
             <button className="btn btn-primary">Explore More</button>
           </div>
           <div>
-          <img src={banner} className="max-w-sm rounded-lg" />
-          <div>
+            <img src={banner} className="max-w-sm rounded-lg" />
             <div>
-                <h3 className="text-3xl">
-                    5.00
-                </h3>
+            <FontAwesomeIcon icon={faStar} />
+              <div>
+                <h3 className="text-3xl">5.00</h3>
                 <p>Trust Pilot Ratings</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
