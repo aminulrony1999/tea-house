@@ -5,6 +5,7 @@ import tea3 from "../../assets/images/tea-3.png";
 import tea4 from "../../assets/images/tea-4.png";
 import fresh1 from "../../assets/images/fresh-1.png";
 import fresh2 from "../../assets/images/fresh-2.png";
+import clientPic from "../../assets/images/client.png";
 const Main = () => {
   return (
     <div className="container mx-auto">
@@ -101,6 +102,32 @@ const Main = () => {
             Premium Quality that makes tea more elegant and more durable when
             you use it.
           </p>
+        </div>
+      </section>
+      {/* Super Client Section */}
+      <section className="flex flex-col lg:flex-row gap-14 my-24 px-16 py-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00]">
+        <div className="space-y-7">
+          <h2 className="text-5xl text-white font-extrabold">
+            Meet Our Super <br /> Clients
+          </h2>
+          <p className="text-white">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <button className="btn btn-primary">Show All</button>
+        </div>
+        <div>
+          <div className="relative p-10 rounded-lg bg-white">
+            <img className="absolute -left-10 -top-7" src={clientPic} alt="" />
+            <p className="text-[#777777]">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <h4 className="text-base font-bold mt-5">Ilham Yuda</h4>
+            <p className="font-medium">Businessman</p>
+          </div>
         </div>
       </section>
     </div>
