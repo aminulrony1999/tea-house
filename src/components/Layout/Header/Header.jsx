@@ -18,9 +18,9 @@ const Header = () => {
             <button className="btn btn-primary">Explore More</button>
           </div>
           <div>
-            <img src={banner} className="max-w-sm rounded-lg" />
-            <div>
-            <FontAwesomeIcon icon={faStar} />
+            <img src={banner} className="max-w-sm" />
+            <div className="flex items-center drop-shadow-lg gap-3 bg-white p-5 w-60 -mt-16">
+            <FontAwesomeIcon className="text-3xl text-[#FFF082]" icon={faStar} />
               <div>
                 <h3 className="text-3xl">5.00</h3>
                 <p>Trust Pilot Ratings</p>
