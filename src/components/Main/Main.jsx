@@ -106,7 +106,7 @@ const Main = () => {
         </div>
       </section>
       {/* Super Client Section */}
-      <section className="flex flex-col lg:flex-row gap-14 my-24 px-16 py-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00]">
+      <section className="flex flex-col lg:flex-row gap-14 mb-0 my-24  px-16 py-24 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end">
         <div className="flex items-center lg:pr-28">
           <div className="space-y-7">
           <h2 className="text-5xl text-white font-extrabold">
@@ -118,7 +118,7 @@ const Main = () => {
             humour, or randomised words which don't look even slightly
             believable.
           </p>
-          <button className="btn btn-primary">Show All</button>
+          <button className="btn btn-primary bg-white text-orange-300 border-none">Show All</button>
           </div>
         </div>
         {/* review container */}

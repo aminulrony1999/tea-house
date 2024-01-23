@@ -15,7 +15,7 @@ const Header = () => {
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button className="btn btn-primary">Explore More</button>
+            <button className="btn btn-primary border-none bg-gradient-to-r from-gradient-start to-gradient-end">Explore More</button>
           </div>
           <div>
             <img src={banner} className="max-w-sm" />
