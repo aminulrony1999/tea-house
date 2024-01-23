@@ -3,6 +3,8 @@ import tea1 from "../../assets/images/tea-1.png";
 import tea2 from "../../assets/images/tea-2.png";
 import tea3 from "../../assets/images/tea-3.png";
 import tea4 from "../../assets/images/tea-4.png";
+import fresh1 from "../../assets/images/fresh-1.png";
+import fresh2 from "../../assets/images/fresh-2.png";
 const Main = () => {
   return (
     <div className="container mx-auto">
@@ -63,6 +65,42 @@ const Main = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      {/* Great tea and fresh tea section */}
+      <section className="flex gap-14 flex-col lg:flex-row my-24">
+        <div className="grid gap-7 flex-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div className="rounded-xl h-32 bg-gradient-to-r from-[#F00] to-blue-[#FF8938] opacity-10"></div>
+          <div className="row-span-2 bg-[#E6A6231A] rounded-lg py-12">
+            <img className="mx-auto" src={fresh1} alt="fresh1" />
+          </div>
+          <div className="row-span-2 rounded-lg py-12 bg-[#5776391A]">
+            <img className="mx-auto" src={fresh2} alt="fresh2" />
+          </div>
+          <div className="rounded-xl h-32 bg-gradient-to-r from-[#000000] to-[#D9D9D9] opacity-10"></div>
+        </div>
+        <div className="space-y-5 flex-1">
+          <h3 className="text-5xl font-extrabold">
+            Great Tea, Freshly <br />
+            Presented
+          </h3>
+          <p>
+            The meaning of gong cha is chanese is to provide the best tea to
+            emperor from all possessions . It represents the highest quality and
+            self expectation. Establishing in 2006, Gong cha had been deeply
+            appreciated by its custoers because of good words of mouth and
+            unique customized service orginated from Taiwan.
+          </p>
+          <h4 className="text-xl font-extrabold">Unique Taste</h4>
+          <p>
+            A Unique and different style from other teapots gives a luxurious
+            and minimalist impression
+          </p>
+          <h4 className="text-xl font-extrabold mt-8">Premium Quality</h4>
+          <p>
+            Premium Quality that makes tea more elegant and more durable when
+            you use it.
+          </p>
         </div>
       </section>
     </div>
