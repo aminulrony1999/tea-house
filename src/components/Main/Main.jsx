@@ -6,6 +6,7 @@ import tea4 from "../../assets/images/tea-4.png";
 import fresh1 from "../../assets/images/fresh-1.png";
 import fresh2 from "../../assets/images/fresh-2.png";
 import clientPic from "../../assets/images/client.png";
+import circle from "../../assets/images/circles.png";
 const Main = () => {
   return (
     <div className="container mx-auto">
@@ -106,7 +107,8 @@ const Main = () => {
       </section>
       {/* Super Client Section */}
       <section className="flex flex-col lg:flex-row gap-14 my-24 px-16 py-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00]">
-        <div className="space-y-7">
+        <div className="flex items-center lg:pr-28">
+          <div className="space-y-7">
           <h2 className="text-5xl text-white font-extrabold">
             Meet Our Super <br /> Clients
           </h2>
@@ -117,16 +119,61 @@ const Main = () => {
             believable.
           </p>
           <button className="btn btn-primary">Show All</button>
+          </div>
         </div>
-        <div>
-          <div className="relative p-10 rounded-lg bg-white">
-            <img className="absolute -left-10 -top-7" src={clientPic} alt="" />
+        {/* review container */}
+        <div className="relative">
+          {/* next review */}
+          <div className="relative p-10 rounded-lg bg-white opacity-40 z-10">
+            <img
+              className="absolute -left-10 -top-7 border-4 border-white rounded-full bg-white"
+              src={clientPic}
+              alt=""
+            />
             <p className="text-[#777777]">
               We are providing the best and suitable home insurance services for
               the people who are interested to treatment
             </p>
             <h4 className="text-base font-bold mt-5">Ilham Yuda</h4>
             <p className="font-medium">Businessman</p>
+            <div className="flex justify-end">
+              <img src={circle} alt="circle" />
+            </div>
+          </div>
+          {/* current review */}
+
+          <div className="absolute p-10 rounded-lg bg-white top-40 lg:-left-24 z-20 w-[433px]">
+            <img
+              className="absolute -left-10 -top-7 border-4 border-white rounded-full bg-white"
+              src={clientPic}
+              alt=""
+            />
+            <p className="text-[#777777]">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <h4 className="text-base font-bold mt-5">Ilham Yuda</h4>
+            <p className="font-medium">Businessman</p>
+            <div className="flex justify-end">
+              <img src={circle} alt="circle" />
+            </div>
+          </div>
+          {/* previous review */}
+          <div className="relative p-10 rounded-lg bg-white opacity-40 mt-16 z-10">
+            <img
+              className="absolute -left-10 -top-7 border-4 border-white rounded-full bg-white"
+              src={clientPic}
+              alt=""
+            />
+            <p className="text-[#777777]">
+              We are providing the best and suitable home insurance services for
+              the people who are interested to treatment
+            </p>
+            <h4 className="text-base font-bold mt-5">Ilham Yuda</h4>
+            <p className="font-medium">Businessman</p>
+            <div className="flex justify-end">
+              <img src={circle} alt="circle" />
+            </div>
           </div>
         </div>
       </section>
